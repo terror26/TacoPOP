@@ -8,18 +8,62 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainVC: UIViewController,DataServiceDelegate {
 
+    @IBOutlet weak var headerView:HeaderView!
+    @IBOutlet weak var collectionview:UICollectionView!
+    
+    var ds:DataService = DataService.instance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        ds.delegate  = self
+        ds.loadDeliciousTacoData()
+        headerView.addDropShadow()
+        
+        collectionview.delegate = self
+        collectionview.dataSource = self
+        
+        /*
+        let nib = UINib(nibName: "TacoCell", bundle: nil)
+        collectionview.register(nib, forCellWithReuseIdentifier: "TacoCell")
+        */
+        
+        collectionview.register(TacoCell.self)
+        
+       
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func deleciousTacoDataLoaded() {
+        print("the data is loaded now \n")
+        collectionview.reloadData()
     }
-
-
+   
 }
+extension MainVC:UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,UICollectionViewDataSource {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return ds.tacoArray.count
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionview.dequeueReusableCell(forIndexPath: indexPath) as TacoCell
+        cell.configurecell(taco: ds.tacoArray[indexPath.row])
+        return cell
+            
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //WE will come back later for you man!!
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 150, height: 150)
+    }
+}
+    
+    
 

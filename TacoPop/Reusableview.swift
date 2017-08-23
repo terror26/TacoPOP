@@ -6,4 +6,15 @@
 //  Copyright © 2017 Kanishk Verma. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+protocol ReusableView:class {}
+
+extension ReusableView where Self : UIView {
+    
+    static var reusableIdentifier:String {
+     
+        return String(describing: self)
+    }
+}
+

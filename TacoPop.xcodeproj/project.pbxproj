@@ -8,11 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		29D82BBC1F4DD8750059CE13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D82BBB1F4DD8750059CE13 /* AppDelegate.swift */; };
-		29D82BBE1F4DD8750059CE13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D82BBD1F4DD8750059CE13 /* ViewController.swift */; };
+		29D82BBE1F4DD8750059CE13 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D82BBD1F4DD8750059CE13 /* MainVC.swift */; };
 		29D82BC11F4DD8750059CE13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D82BBF1F4DD8750059CE13 /* Main.storyboard */; };
 		29D82BC31F4DD8750059CE13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29D82BC21F4DD8750059CE13 /* Assets.xcassets */; };
 		29D82BC61F4DD8750059CE13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D82BC41F4DD8750059CE13 /* LaunchScreen.storyboard */; };
 		29D82BD11F4DD8750059CE13 /* TacoPopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D82BD01F4DD8750059CE13 /* TacoPopTests.swift */; };
+		29D82BE41F4DE1930059CE13 /* Dropshadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D82BE31F4DE1930059CE13 /* Dropshadow.swift */; };
+		29D82BE61F4DE2450059CE13 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D82BE51F4DE2450059CE13 /* HeaderView.swift */; };
+		29D82BE81F4DE8800059CE13 /* Taco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D82BE71F4DE8800059CE13 /* Taco.swift */; };
+		29D82BEA1F4DF0CD0059CE13 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D82BE91F4DF0CD0059CE13 /* DataService.swift */; };
+		29D82BF11F4DFDB20059CE13 /* TacoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D82BEF1F4DFDB20059CE13 /* TacoCell.swift */; };
+		29D82BF21F4DFDB20059CE13 /* TacoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29D82BF01F4DFDB20059CE13 /* TacoCell.xib */; };
+		29D82BF41F4E0C470059CE13 /* Reusableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D82BF31F4E0C470059CE13 /* Reusableview.swift */; };
+		29D82BF61F4E0D5C0059CE13 /* nibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D82BF51F4E0D5C0059CE13 /* nibLoadableView.swift */; };
+		29D82BF81F4E156F0059CE13 /* UIcollectionView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D82BF71F4E156F0059CE13 /* UIcollectionView+ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +37,7 @@
 /* Begin PBXFileReference section */
 		29D82BB81F4DD8750059CE13 /* TacoPop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TacoPop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D82BBB1F4DD8750059CE13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29D82BBD1F4DD8750059CE13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29D82BBD1F4DD8750059CE13 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		29D82BC01F4DD8750059CE13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29D82BC21F4DD8750059CE13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29D82BC51F4DD8750059CE13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +45,15 @@
 		29D82BCC1F4DD8750059CE13 /* TacoPopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TacoPopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D82BD01F4DD8750059CE13 /* TacoPopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacoPopTests.swift; sourceTree = "<group>"; };
 		29D82BD21F4DD8750059CE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29D82BE31F4DE1930059CE13 /* Dropshadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dropshadow.swift; sourceTree = "<group>"; };
+		29D82BE51F4DE2450059CE13 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		29D82BE71F4DE8800059CE13 /* Taco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Taco.swift; sourceTree = "<group>"; };
+		29D82BE91F4DF0CD0059CE13 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		29D82BEF1F4DFDB20059CE13 /* TacoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TacoCell.swift; sourceTree = "<group>"; };
+		29D82BF01F4DFDB20059CE13 /* TacoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TacoCell.xib; sourceTree = "<group>"; };
+		29D82BF31F4E0C470059CE13 /* Reusableview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusableview.swift; sourceTree = "<group>"; };
+		29D82BF51F4E0D5C0059CE13 /* nibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = nibLoadableView.swift; sourceTree = "<group>"; };
+		29D82BF71F4E156F0059CE13 /* UIcollectionView+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIcollectionView+ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +95,12 @@
 		29D82BBA1F4DD8750059CE13 /* TacoPop */ = {
 			isa = PBXGroup;
 			children = (
-				29D82BBB1F4DD8750059CE13 /* AppDelegate.swift */,
-				29D82BBD1F4DD8750059CE13 /* ViewController.swift */,
-				29D82BBF1F4DD8750059CE13 /* Main.storyboard */,
-				29D82BC21F4DD8750059CE13 /* Assets.xcassets */,
-				29D82BC41F4DD8750059CE13 /* LaunchScreen.storyboard */,
-				29D82BC71F4DD8750059CE13 /* Info.plist */,
+				29D82BDC1F4DDB8E0059CE13 /* Model */,
+				29D82BDB1F4DDB850059CE13 /* View */,
+				29D82BDD1F4DDB950059CE13 /* Controller */,
+				29D82BDF1F4DDDDE0059CE13 /* Protocols */,
+				29D82BE01F4DDDE40059CE13 /* extension */,
+				29D82BDE1F4DDBAD0059CE13 /* Resources */,
 			);
 			path = TacoPop;
 			sourceTree = "<group>";
@@ -94,6 +112,63 @@
 				29D82BD21F4DD8750059CE13 /* Info.plist */,
 			);
 			path = TacoPopTests;
+			sourceTree = "<group>";
+		};
+		29D82BDB1F4DDB850059CE13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				29D82BBF1F4DD8750059CE13 /* Main.storyboard */,
+				29D82BC41F4DD8750059CE13 /* LaunchScreen.storyboard */,
+				29D82BE51F4DE2450059CE13 /* HeaderView.swift */,
+				29D82BEF1F4DFDB20059CE13 /* TacoCell.swift */,
+				29D82BF01F4DFDB20059CE13 /* TacoCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		29D82BDC1F4DDB8E0059CE13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				29D82BE71F4DE8800059CE13 /* Taco.swift */,
+				29D82BE91F4DF0CD0059CE13 /* DataService.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		29D82BDD1F4DDB950059CE13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				29D82BBD1F4DD8750059CE13 /* MainVC.swift */,
+				29D82BBB1F4DD8750059CE13 /* AppDelegate.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		29D82BDE1F4DDBAD0059CE13 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				29D82BC21F4DD8750059CE13 /* Assets.xcassets */,
+				29D82BC71F4DD8750059CE13 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29D82BDF1F4DDDDE0059CE13 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				29D82BE31F4DE1930059CE13 /* Dropshadow.swift */,
+				29D82BF31F4E0C470059CE13 /* Reusableview.swift */,
+				29D82BF51F4E0D5C0059CE13 /* nibLoadableView.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		29D82BE01F4DDDE40059CE13 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				29D82BF71F4E156F0059CE13 /* UIcollectionView+ext.swift */,
+			);
+			name = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29D82BF21F4DFDB20059CE13 /* TacoCell.xib in Resources */,
 				29D82BC61F4DD8750059CE13 /* LaunchScreen.storyboard in Resources */,
 				29D82BC31F4DD8750059CE13 /* Assets.xcassets in Resources */,
 				29D82BC11F4DD8750059CE13 /* Main.storyboard in Resources */,
@@ -199,8 +275,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29D82BBE1F4DD8750059CE13 /* ViewController.swift in Sources */,
+				29D82BF81F4E156F0059CE13 /* UIcollectionView+ext.swift in Sources */,
+				29D82BF11F4DFDB20059CE13 /* TacoCell.swift in Sources */,
+				29D82BE41F4DE1930059CE13 /* Dropshadow.swift in Sources */,
+				29D82BBE1F4DD8750059CE13 /* MainVC.swift in Sources */,
+				29D82BF61F4E0D5C0059CE13 /* nibLoadableView.swift in Sources */,
+				29D82BF41F4E0C470059CE13 /* Reusableview.swift in Sources */,
 				29D82BBC1F4DD8750059CE13 /* AppDelegate.swift in Sources */,
+				29D82BEA1F4DF0CD0059CE13 /* DataService.swift in Sources */,
+				29D82BE81F4DE8800059CE13 /* Taco.swift in Sources */,
+				29D82BE61F4DE2450059CE13 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +492,7 @@
 				29D82BD71F4DD8750059CE13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29D82BD81F4DD8750059CE13 /* Build configuration list for PBXNativeTarget "TacoPopTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +501,7 @@
 				29D82BDA1F4DD8750059CE13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

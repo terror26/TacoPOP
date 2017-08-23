@@ -6,4 +6,15 @@
 //  Copyright © 2017 Kanishk Verma. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+protocol Dropshadow {}
+
+extension Dropshadow where Self:UIView {
+    func addDropShadow() {
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = CGSize.zero
+        layer.shadowRadius = 5
+        layer.shadowOpacity = 0.8
+    }
+}

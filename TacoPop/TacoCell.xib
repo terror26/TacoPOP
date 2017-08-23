@@ -1,19 +1,55 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TacoCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TacoCell" id="gTV-IL-0wX" customClass="TacoCell" customModule="TacoPop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="177" height="153"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <rect key="frame" x="0.0" y="0.0" width="177" height="153"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beef" translatesAutoresizingMaskIntoConstraints="NO" id="39l-pv-dFv">
+                        <rect key="frame" x="0.0" y="0.0" width="177" height="113"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beef Taco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.34999999999999998" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="usz-9F-gm7">
+                        <rect key="frame" x="0.0" y="128" width="177" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Jpg-jm-ZwJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
             </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="usz-9F-gm7" secondAttribute="trailing" id="FC3-6m-wWJ"/>
+                <constraint firstItem="usz-9F-gm7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ILX-4Q-aGe"/>
+                <constraint firstItem="39l-pv-dFv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="X0k-NK-Zeh"/>
+                <constraint firstItem="39l-pv-dFv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XSy-Ze-JOD"/>
+                <constraint firstAttribute="bottom" secondItem="39l-pv-dFv" secondAttribute="bottom" constant="40" id="bcr-Rf-Kd2"/>
+                <constraint firstAttribute="bottom" secondItem="usz-9F-gm7" secondAttribute="bottom" constant="5" id="j31-Q8-Sv6"/>
+                <constraint firstAttribute="trailing" secondItem="39l-pv-dFv" secondAttribute="trailing" id="sMA-h8-Zen"/>
+            </constraints>
+            <size key="customSize" width="177" height="153"/>
+            <connections>
+                <outlet property="tacoimage" destination="39l-pv-dFv" id="2iq-iV-hMH"/>
+                <outlet property="tacolbl" destination="usz-9F-gm7" id="Xwr-lp-EgF"/>
+            </connections>
+            <point key="canvasLocation" x="11.5" y="-19.5"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="Beef" width="960" height="640"/>
+    </resources>
 </document>

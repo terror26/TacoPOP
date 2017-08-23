@@ -8,11 +8,16 @@
 
 import UIKit
 
-class TacoCell: UICollectionViewCell {
+class TacoCell: UICollectionViewCell,NibLoadableView {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var tacoimage:UIImageView!
+    @IBOutlet weak var tacolbl:UILabel!
+    
+    var taco : Taco!
+
+    func configurecell(taco:Taco)  {
+        self.taco = taco
+        tacoimage.image = UIImage(named: taco.proteinid.rawValue)
+        tacolbl.text = taco.productname
     }
-
 }
