@@ -56,7 +56,10 @@ extension MainVC:UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,UIC
             
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //WE will come back later for you man!!
+        
+        if let cell = collectionview.cellForItem(at: indexPath) as?TacoCell {
+            cell.shake()
+        }
     }
     
     

@@ -22,6 +22,7 @@
 		29D82BF41F4E0C470059CE13 /* Reusableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D82BF31F4E0C470059CE13 /* Reusableview.swift */; };
 		29D82BF61F4E0D5C0059CE13 /* nibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D82BF51F4E0D5C0059CE13 /* nibLoadableView.swift */; };
 		29D82BF81F4E156F0059CE13 /* UIcollectionView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D82BF71F4E156F0059CE13 /* UIcollectionView+ext.swift */; };
+		29D82BFA1F4E25FA0059CE13 /* Shakable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D82BF91F4E25FA0059CE13 /* Shakable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		29D82BF31F4E0C470059CE13 /* Reusableview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusableview.swift; sourceTree = "<group>"; };
 		29D82BF51F4E0D5C0059CE13 /* nibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = nibLoadableView.swift; sourceTree = "<group>"; };
 		29D82BF71F4E156F0059CE13 /* UIcollectionView+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIcollectionView+ext.swift"; sourceTree = "<group>"; };
+		29D82BF91F4E25FA0059CE13 /* Shakable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shakable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				29D82BF71F4E156F0059CE13 /* UIcollectionView+ext.swift */,
+				29D82BF91F4E25FA0059CE13 /* Shakable.swift */,
 			);
 			name = extension;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29D82BF81F4E156F0059CE13 /* UIcollectionView+ext.swift in Sources */,
+				29D82BFA1F4E25FA0059CE13 /* Shakable.swift in Sources */,
 				29D82BF11F4DFDB20059CE13 /* TacoCell.swift in Sources */,
 				29D82BE41F4DE1930059CE13 /* Dropshadow.swift in Sources */,
 				29D82BBE1F4DD8750059CE13 /* MainVC.swift in Sources */,
